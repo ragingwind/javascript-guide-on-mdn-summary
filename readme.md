@@ -1,13 +1,15 @@
 <!-- page_number: true -->
 <!-- $size: 16:9 -->
 
-# JavaScript: Summary of Javascript Guide on [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![center 150%](https://cloud.githubusercontent.com/assets/124117/21137039/859b6122-c16b-11e6-89f8-956c3f0a3cac.png)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+# JavaScript: Summary of Javascript Guide on [MDN]()
 
 > To give a presentation in short time, with additional descriptions to easier understand
 
 ---
 
-# JavaScript is
+![js 30%](https://cloud.githubusercontent.com/assets/124117/21137157/f967df9a-c16b-11e6-8500-f48e3b6b25b3.jpg)
 
 - Object-oriented scripting language
 - Functional programming (in technically)
@@ -28,7 +30,7 @@
 
 ---
 
-[![center original 30%](https://d262ilb51hltx0.cloudfront.net/max/800/1*v9AT7ZaJc6fR2MjYljGEzg.png)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+# Table of Contents
 
 - Grammar and types
 - Control flow and error handling
@@ -83,8 +85,8 @@ var str1 = '';
 var Str = '';
 
 // ISO-8859-1 or Unicode letter
-var 변수 = '변수';
-var Š = 'Estonian';
+var ëłě = 'ëłě';
+var Ĺ  = 'Estonian';
 
 ```
 
@@ -921,11 +923,11 @@ console.log(parseInt('10'), Number.parseInt('10'), Number.parseInt('NaN'));
 // 3.14 3.14
 console.log(parseFloat('3.14'), Number.parseFloat('3.14'));
 
-const url = 'google.com/한글';
+const url = 'google.com/íę¸';
 const enc = encodeURIComponent(url);
 const dec = decodeURIComponent(enc);
 
-// google.com%2F%ED%95%9C%EA%B8%80 google.com/한글
+// google.com%2F%ED%95%9C%EA%B8%80 google.com/íę¸
 console.log(enc, dec);
 ```
 
@@ -1363,7 +1365,7 @@ console.log(d.getHours(), d.getMinutes() , d.getSeconds());
 
 const birthday = new Date('December 17, 1995 03:24:00');
 console.log(birthday);
-// [Intl · nodejs/node Wiki](https://goo.gl/8eh6xi)
+// [Intl Âˇ nodejs/node Wiki](https://goo.gl/8eh6xi)
 console.log(birthday.toLocaleString('ko-KR'));
 ```
 
@@ -1378,15 +1380,15 @@ console.log(birthday.toLocaleString('ko-KR'));
 ```js
 'foo'
 "bar"
-'中文 español deutsch English हिन्दी العربية português বাংলা русский 日本語 ਪੰਜਾਬੀ 한국어 தமிழ் עברית💯🎉🐶👍'
+'ä¸­ć espaĂąol deutsch English ŕ¤šŕ¤żŕ¤¨ŕĽŕ¤ŚŕĽ Ř§ŮŘšŘąŘ¨ŮŘŠ portuguĂŞs ŕŚŹŕŚžŕŚŕŚ˛ŕŚž ŃŃŃŃĐşĐ¸Đš ćĽćŹčŞ ŕ¨ŞŕŠ°ŕ¨ŕ¨žŕ¨ŹŕŠ íęľ­ě´ ŕŽ¤ŕŽŽŕŽżŕŽ´ŕŻ ×˘××¨××ŞđŻđđśđ'
 // Hexadecimal escape sequences
-'\xA9' // "©"
+'\xA9' // "ÂŠ"
 // Unicode escape sequences
-'\u00A9' // "©"
+'\u00A9' // "ÂŠ"
 // Unicode code point escapes
-'\u{2F804}' // 你
+'\u{2F804}' // đŻ 
 // the same with simple Unicode escapes
-'\uD87E\uDC04' // 你
+'\uD87E\uDC04' // đŻ 
 
 ```
 
