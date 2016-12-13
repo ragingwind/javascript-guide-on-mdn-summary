@@ -911,7 +911,7 @@ var p = new Person();
 
 ## Predefined functions
 
-```
+```js
 // 3
 console.log(eval('var foo = 3; console.log(foo)'));
 
